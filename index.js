@@ -1,4 +1,3 @@
-// # Rock-Paper-Scissors Pseudocode
 let options = ['r', 'p', 's'];
 let win = 0;
 let loss = 0;
