@@ -8,6 +8,7 @@ for (var i = 0; i <= 5; i++) {
   game();
 }
 
+// wrap it into function to be able to call it for Play Again option in case of invalid input
 function game() {
   let userChoice = prompt('Choose from: R(rock), P(paper), S(scissors)');
   userChoice = userChoice.toLowerCase();
