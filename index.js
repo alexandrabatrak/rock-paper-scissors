@@ -80,9 +80,9 @@ function game() {
   //    If user ties, then we add one to their ties.
   // 6. Prompt user to play again.
   let playAgain = confirm('Play again?');
-}
-if (playAgain) {
-  for (i = 0; i <= 5; i++) {
-    game();
+  if (playAgain) {
+    for (i = 0; i <= 5; i++) {
+      game();
+    }
   }
 }
