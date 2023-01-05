@@ -3,9 +3,13 @@ let options = ['r', 'p', 's'];
 let win = 0;
 let loss = 0;
 let tie = 0;
+
+// for loop makes it stuck after 3 loops and unable to cancel
+// for (i = 0; i <= 3; i++) {
 game();
+// }
+
 function game() {
-  // for (i = 0; i <= 3; i++) {
   let userChoice = prompt('Choose from: R(rock), P(paper), S(scissors)');
   if (options.includes(userChoice)) {
     let computerChoice = options[Math.floor(Math.random() * options.length)];
@@ -45,6 +49,10 @@ function game() {
         tie +
         '.'
     );
+    playAgain = confirm('Play again?');
+    if (playAgain) {
+      game();
+    }
   } else {
     alert('Wrong input');
     let playAgain = confirm('Play again?');
@@ -54,9 +62,4 @@ function game() {
       return;
     }
   }
-  playAgain = confirm('Play again?');
-  if (playAgain) {
-    game();
-  }
-  // }
 }
