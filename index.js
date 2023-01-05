@@ -33,18 +33,45 @@ if (userChoice === 'rock' && computerChoice === 'scissors') {
   alert('You win!')
   win++;
 }
-//    If user picks rock and if computer picks paper, then user loses.
-// ​
-//    If user picks scissors and if computer picks rock, then user loses.
-// ​
+
 //    If user picks scissors and if computer picks paper, then user wins.
-// ​
+if (userChoice === 'scissors' && computerChoice === 'paper') {
+  alert('You Win!')
+  win++;
+}
+
 //    If user picks paper and if computer picks rock, then user wins.
-// ​
+if (userChoice === 'paper' && computerChoice === 'rock') {
+  alert('You Win!')
+  win++;
+}
+
+
+//    If user picks rock and if computer picks paper, then user loses.
+if (userChoice === 'rock' && computerChoice === 'paper') {
+  alert('You Lose!')
+  loss++;
+}
+
+//    If user picks scissors and if computer picks rock, then user loses.
+if (userChoice === 'scissors' && computerChoice === 'rock') {
+  alert('You Lose!')
+  loss++;
+}
+
 //    If user picks paper and if computer picks scissors, then user loses.
-// ​
+if (userChoice === 'paper' && computerChoice === 'scissors') {
+  alert('You Lose!')
+  loss++;
+}
+
 //    If user picks the same as computer, then they tie.
-// ​
+if (userChoice === computerChoice) { 
+  alert ('draw')
+  tie++
+}
+
+​
 // 5. We then add to their score.
 // ​
 //    If user wins, then we add one to their wins.
