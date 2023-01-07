@@ -35,3 +35,5 @@
    * If user ties, then we add one to their ties.
 ​
 6. Prompt user to play again.
+
+[![Image of github-profile-views-counter](https://github.com/alexandrabatrak/github-profile-views-counter/blob/master/svg/585602897/badge.svg)](https://github.com/alexandrabatrak/github-profile-views-counter/blob/master/readme/585602897/week.md)
